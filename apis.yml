@@ -1,8 +1,18 @@
 aid: skyselect
 name: SkySelect
-description: 'SkySelect is a company surfaced as a portfolio company of initialized-capital and added
-  to the API Evangelist network as a stub for enrichment. Sector: marketplaces. This profile is a lead
-  awaiting the enrichment pipeline.'
+description: >-
+  SkySelect is an AI-powered aircraft parts procurement platform for airlines,
+  MROs (maintenance, repair and overhaul providers), and aircraft lessors.
+  Founded in 2017 and headquartered in San Francisco, it operates an
+  eProcurement-as-a-Service platform that automates sourcing, purchasing, and
+  order tracking for aviation materials. Rather than a listings-based
+  marketplace, buyers submit a demand list and SkySelect's specialised
+  procurement AI automatically issues RFQs to a global network of 3,000+
+  verified suppliers, having processed more than US$6 billion in transactions.
+  The platform exposes an integration API (inventory sync, RFQ reception, and
+  quote submission) gated behind account login; partners such as Rotabull
+  connect via API Key and Secret credentials generated in Developer Settings.
+  SkySelect is backed by Initialized Capital and raised US$9M in 2026.
 url: https://raw.githubusercontent.com/api-evangelist/skyselect/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,12 +20,31 @@ x-backed-by:
 - initialized-capital
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
+image: https://www.skyselect.com/_next/static/images/logo-749bfeaf511d1231670624e18b0090df.svg
 tags:
 - Company
 - Marketplaces
+- Aviation
+- Procurement
+- Supply Chain
+- Aircraft Parts
+- Artificial Intelligence
+- MRO
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -25,3 +54,28 @@ maintainers:
 common:
 - type: Website
   url: https://skyselect.com/
+- type: Product
+  url: https://www.skyselect.com/product
+- type: Pricing
+  url: https://www.skyselect.com/plans
+- type: Blog
+  url: https://www.skyselect.com/insights
+- type: HelpCenter
+  url: https://help.skyselect.com/
+- type: Login
+  url: https://app.skyselect.com/db/
+- type: TermsOfService
+  url: https://www.skyselect.com/terms
+- type: PrivacyPolicy
+  url: https://www.skyselect.com/privacy-policy
+- type: Authentication
+  url: authentication/skyselect-authentication.yml
+- type: DomainSecurity
+  url: security/skyselect-domain-security.yml
+- type: WellKnown
+  url: well-known/skyselect-well-known.yml
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 3
+  pass: local-v1

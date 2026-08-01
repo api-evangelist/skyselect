@@ -1,0 +1,26 @@
+generated: '2026-07-21'
+method: searched
+source: https://support.rotabull.com/docs/skyselect
+docs: https://help.skyselect.com/
+note: >-
+  SkySelect exposes an API for buyer/supplier integrations (inventory sync, RFQ
+  reception, quote submission). Access is gated behind a login: credentials are
+  generated in the SkySelect app under Settings > Developer Settings. No public
+  OpenAPI or developer portal is published, so this profile is captured from the
+  provider Help Center and the Rotabull integration documentation.
+summary:
+  types:
+  - apiKey
+  api_key_in:
+  - header
+  oauth2_flows: []
+schemes:
+- name: apiKeyAndSecret
+  type: apiKey
+  in: header
+  description: >-
+    API Key and Secret pair generated in the SkySelect application under
+    Settings > Developer Settings. Presented on API requests to authenticate
+    integration partners (e.g. Rotabull) for inventory, RFQ, and quote flows.
+  sources:
+  - https://support.rotabull.com/docs/skyselect

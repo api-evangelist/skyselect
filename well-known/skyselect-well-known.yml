@@ -1,0 +1,11 @@
+generated: '2026-07-21'
+method: searched
+source: live probes of https://skyselect.com/.well-known/*
+host: https://skyselect.com
+documents:
+- path: /.well-known/security.txt
+  status: 404
+- path: /.well-known/openid-configuration
+  status: 404
+- path: /.well-known/oauth-authorization-server
+  status: 404
