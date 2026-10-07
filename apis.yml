@@ -73,6 +73,8 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: Plans
+  url: plans/skyselect-plans-pricing.yml
 - type: Website
   url: https://skyselect.com/
 - type: Product
