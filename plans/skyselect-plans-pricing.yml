@@ -29,3 +29,23 @@ plans:
   period: none
   included_quota: Everything in Procurement Platform plus P.O. optimization, delay management, supplier
     integration, invoice management, advanced analytics, real-time buyer support
+x-canonical:
+  generated: '2026-10-08'
+  vocabulary: all/0-working/economics/plans-canonical.yml
+  models: []
+  units: []
+  plans:
+  - name: Procurement Platform
+    access: other
+    model: unstated
+    model_how: derived
+    units: []
+    periods:
+    - none
+  - name: Procurement AI
+    access: other
+    model: unstated
+    model_how: derived
+    units: []
+    periods:
+    - none
